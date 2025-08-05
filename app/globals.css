@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-primary-900 text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-accent-blue to-accent-violet text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-primary-700 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-yellow text-primary-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-all duration-200;
+  }
+  
+  .input-field {
+    @apply bg-primary-800 border border-primary-600 text-white px-4 py-3 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all duration-200;
+  }
+  
+  .select-field {
+    @apply bg-primary-800 border border-primary-600 text-white px-4 py-3 rounded-lg focus:ring-2 focus:ring-accent-blue focus:border-transparent transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-primary-800 border border-primary-700 rounded-xl p-6 shadow-lg;
+  }
+  
+  .card-gradient {
+    @apply bg-gradient-to-br from-primary-800 to-primary-900 border border-primary-700 rounded-xl p-6 shadow-lg;
+  }
+}
